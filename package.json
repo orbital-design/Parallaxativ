@@ -1,0 +1,21 @@
+{
+	"name": "parallaxativ-master-cgb-guten-block",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "cgb-scripts start",
+		"build": "cgb-scripts build",
+		"eject": "cgb-scripts eject"
+	},
+	"dependencies": {
+		"@wordpress/api-fetch": "^3.6.0",
+		"cgb-scripts": "1.20.0",
+		"classnames": "^2.2.6",
+		"fast-average-color": "^5.2.0",
+		"jss": "^9.8.7",
+		"jss-preset-default": "^4.5.0",
+		"memize": "^1.0.5",
+		"moment": "^2.24.0",
+		"tinycolor2": "^1.4.1"
+	}
+}

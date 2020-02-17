@@ -1,0 +1,18 @@
+/**
+ * ----------------------------------------
+ * Animation: fade-out
+ * ----------------------------------------
+ */
+
+.ani--fade-in {
+   animation-name: fade-out;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

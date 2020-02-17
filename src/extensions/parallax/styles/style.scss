@@ -1,0 +1,52 @@
+.plx-img {
+	position: relative;
+	overflow: hidden;
+	height: auto;
+
+	img {
+		position: absolute;
+		width: calc(100% - calc(2 * var(--gutter-width)));
+		left: 0;
+		right: 0;
+		margin-left: auto;
+	}
+
+	&:before {
+		content: "";
+		float: left;
+	}
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	&.plx-img\:4x1:before {
+		padding-bottom: 25%;
+	}
+
+	&.plx-img\:3x1:before {
+		padding-bottom: 33.333%;
+	}
+
+	&.plx-img\:2x1:before {
+		padding-bottom: 50%;
+	}
+
+	&.plx-img\:16x9:before {
+		padding-bottom: 56.25%;
+	}
+
+	&.plx-img\:3x2:before {
+		padding-bottom: 66.666%;
+	}
+
+	&.plx-img\:7x5:before {
+		padding-bottom: 71.43%;
+	}
+
+	&.plx-img\:1x1:before {
+		padding-bottom: 100%;
+	}
+}

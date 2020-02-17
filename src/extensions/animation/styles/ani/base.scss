@@ -1,0 +1,123 @@
+:root {
+    // Set all animation properties to the default, will be overridden in the html.
+    --ani-name: fade-in;
+    --ani-speed: 0s;
+    --ani-timing: ease;
+    --ani-delay: 0s;
+    --ani-loop: 1;
+    --ani-dir: normal;
+    --ani-fill: forwards; // We won't use default for this one.
+
+    --ani-in-name: fade-in;
+    --ani-in-speed: 0s;
+    --ani-in-timing: ease;
+    --ani-in-delay: 0s;
+    --ani-in-loop: 1;
+    --ani-in-dir: normal;
+    --ani-in-fill: forwards; // We won't use default for this one.
+
+    --ani-out-name: fade-in;
+    --ani-out-speed: 0s;
+    --ani-out-timing: ease;
+    --ani-out-delay: 0s;
+    --ani-out-loop: 1;
+    --ani-out-dir: normal;
+    --ani-out-fill: forwards; // We won't use default for this one.
+
+    // Animation/Transition Easings
+    --ani-ease: ease;
+    --ani-easeIn: ease-in;
+    --ani-easeOut: ease-out;
+    --ani-easeInOut: ease-in-out;
+    --ani-linear: linear;
+    --ani-easeInSine: cubic-bezier(0.47, 0, 0.745, 0.715);
+    --ani-easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+    --ani-easeInOutSine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    --ani-easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    --ani-easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --ani-easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --ani-easeInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    --ani-easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+    --ani-easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+    --ani-easeInCirc: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    --ani-easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+    --ani-easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    --ani-easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    --ani-easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --ani-easeInOutQuad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    --ani-easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    --ani-easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+    --ani-easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
+    --ani-easeInExpo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    --ani-easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+    --ani-easeInOutExpo: cubic-bezier(1, 0, 0, 1);
+    --ani-easeInBack: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    --ani-easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --ani-easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+// Animation Properties.
+// @import 'properties/utilities'; // If you're using css vars, comment out this file.
+@import 'properties/custom-vars'; // If you're using utility classes, comment out this file.
+
+// Entrance Animations.
+// Comment out any you're not using to reduce file size.
+// Fade In.
+@import 'animations/entrances/fade-in/fade-in';
+@import 'animations/entrances/fade-in/fade-in-fwd';
+@import 'animations/entrances/fade-in/fade-in-back';
+@import 'animations/entrances/fade-in/fade-in-top';
+@import 'animations/entrances/fade-in/fade-in-bottom';
+@import 'animations/entrances/fade-in/fade-in-left';
+@import 'animations/entrances/fade-in/fade-in-right';
+@import 'animations/entrances/fade-in/fade-in-tl';
+@import 'animations/entrances/fade-in/fade-in-tr';
+@import 'animations/entrances/fade-in/fade-in-bl';
+@import 'animations/entrances/fade-in/fade-in-br';
+// Flip In.
+@import 'animations/entrances/flip-in/flip-in-hor';
+@import 'animations/entrances/flip-in/flip-in-hor-alt';
+@import 'animations/entrances/flip-in/flip-in-ver';
+@import 'animations/entrances/flip-in/flip-in-ver-alt';
+// Slit In.
+@import 'animations/entrances/slit-in/slit-in-hor';
+@import 'animations/entrances/slit-in/slit-in-ver';
+// Swing In.
+@import 'animations/entrances/swing-in/swing-in-fwd-top';
+@import 'animations/entrances/swing-in/swing-in-fwd-right';
+@import 'animations/entrances/swing-in/swing-in-fwd-bottom';
+@import 'animations/entrances/swing-in/swing-in-fwd-left';
+
+// Exit Animations.
+// Comment out any you're not using to reduce file size.
+// Fade Out.
+@import 'animations/exits/fade-out/fade-out';
+@import 'animations/exits/fade-out/fade-out-fwd';
+@import 'animations/exits/fade-out/fade-out-back';
+@import 'animations/exits/fade-out/fade-out-top';
+@import 'animations/exits/fade-out/fade-out-bottom';
+@import 'animations/exits/fade-out/fade-out-left';
+@import 'animations/exits/fade-out/fade-out-right';
+@import 'animations/exits/fade-out/fade-out-tl';
+@import 'animations/exits/fade-out/fade-out-tr';
+@import 'animations/exits/fade-out/fade-out-bl';
+@import 'animations/exits/fade-out/fade-out-br';
+// Flip Out.
+@import 'animations/exits/flip-out/flip-out-hor';
+@import 'animations/exits/flip-out/flip-out-hor-alt';
+@import 'animations/exits/flip-out/flip-out-ver';
+@import 'animations/exits/flip-out/flip-out-ver-alt';
+// Slit Out.
+@import 'animations/exits/slit-out/slit-out-hor';
+@import 'animations/exits/slit-out/slit-out-ver';
+// Swing Out.
+@import 'animations/exits/swing-out/swing-out-fwd-top';
+@import 'animations/exits/swing-out/swing-out-fwd-right';
+@import 'animations/exits/swing-out/swing-out-fwd-bottom';
+@import 'animations/exits/swing-out/swing-out-fwd-left';
+
+// Background Animations.
+// Comment out any you're not using to reduce file size.
+// Kenburns.
+@import 'animations/background/kenburns/kenburns-top';
+@import 'animations/background/kenburns/kenburns-right';

@@ -1,0 +1,47 @@
+/* CSS Custom Variables - Utility Class Replacement */
+/* By using these classes, you can control the value for the property directly in the html. */
+/* Please see the comment provided for each class for instruction on how to do so. */
+/* Designated Class MUST be used along side the var declartion in the html. */
+
+.ani\:false {
+}
+.ani,
+.ani\:true {
+	// Set in html by using style="--ani-name: fade-in; --ani-speed: .25s; --ani-timing: ease-in; --ani-delay: .25s; --ani-loop: 1; --ani-dir: normal; --ani-fill: forwards;"
+	animation: var(--ani-name) var(--ani-speed) var(--ani-timing) var(--ani-delay)
+		var(--ani-loop) var(--ani-dir) var(--ani-fill);
+}
+.ani-in\:false {
+	opacity: 0;
+}
+.ani-in,
+.ani-in\:true {
+	opacity: 0;
+	animation: var(--ani-in-name) var(--ani-in-speed) var(--ani-in-timing)
+		var(--ani-in-delay) var(--ani-in-loop) var(--ani-in-dir) var(--ani-in-fill);
+}
+
+.ani-out\:false {
+	opacity: 1;
+}
+.ani-out,
+.ani-out\:true {
+	opacity: 1;
+	animation: var(--ani-out-name) var(--ani-out-speed) var(--ani-out-timing)
+		var(--ani-out-delay) var(--ani-out-loop) var(--ani-out-dir)
+		var(--ani-out-fill);
+}
+
+// Accessibility.
+// Immediately jump any animation to the end point for print and if the user has set their device to "prefers reduced motion".
+@media (print), (prefers-reduced-motion: reduce) {
+	.ani,
+	.ani\:true,
+	.ani-in,
+	.ani-in\:true,
+	.ani-out,
+	.ani-out\:true {
+		animation-duration: 0.001s !important;
+		transition-duration: 0.001s !important;
+	}
+}
