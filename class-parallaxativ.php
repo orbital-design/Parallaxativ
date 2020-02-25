@@ -115,7 +115,7 @@ if ( ! class_exists( 'Parallaxativ' ) ) :
 		 */
 		private function includes() {
 			require_once PARALLAXATIV_PLUGIN_DIR . 'includes/class-parallaxativ-assets.php';
-			require_once SOPHIA_BLOCKS_PLUGIN_DIR . 'includes/class-github-updater.php';
+			require_once PARALLAXATIV_PLUGIN_DIR . 'includes/class-github-updater.php';
 
 			$updater = new Github_Updater( __FILE__ );
 			$updater->set_username( 'addzycullen' );
