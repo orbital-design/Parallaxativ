@@ -117,7 +117,7 @@ if ( ! class_exists( 'Parallaxativ' ) ) :
 			require_once PARALLAXATIV_PLUGIN_DIR . 'includes/class-parallaxativ-assets.php';
 			require_once PARALLAXATIV_PLUGIN_DIR . 'includes/class-github-updater.php';
 
-			$updater = new Github_Updater( __FILE__ );
+			$updater = new Parallax_Github_Updater( __FILE__ );
 			$updater->set_username( 'addzycullen' );
 			$updater->set_repository( 'Parallaxativ' );
 			$updater->authorize( 'dce8d5d5228104bb8c6f0383a07ea21bb312dfe9' ); // Your auth code goes here for private repos

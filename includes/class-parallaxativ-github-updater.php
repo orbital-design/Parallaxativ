@@ -1,6 +1,6 @@
 <?php
 
-class Github_Updater {
+class Parallax_Github_Updater {
 
     private $file;
 
