@@ -5,7 +5,7 @@
  * Description: Parallaxativ - A suite of block extensions to add interactions to existing blocks.
  * Author: Adam Cullen (addzycullen)
  * Author URI: https://twitter.com/addzycullen
- * Version: 2.3
+ * Version: 2.4
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
@@ -86,7 +86,7 @@ if ( ! class_exists( 'Parallaxativ' ) ) :
 		 * @return void
 		 */
 		private function constants() {
-			$this->define( 'PARALLAXATIV_VERSION', '2.3' );
+			$this->define( 'PARALLAXATIV_VERSION', '2.4' );
 			$this->define( 'PARALLAXATIV_HAS_PRO', false );
 			$this->define( 'PARALLAXATIV_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 			$this->define( 'PARALLAXATIV_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -120,7 +120,7 @@ if ( ! class_exists( 'Parallaxativ' ) ) :
 			$updater = new Parallax_Github_Updater( __FILE__ );
 			$updater->set_username( 'addzycullen' );
 			$updater->set_repository( 'Parallaxativ' );
-			$updater->authorize( 'dce8d5d5228104bb8c6f0383a07ea21bb312dfe9' ); // Your auth code goes here for private repos
+			$updater->authorize( 'e46e129a44bd68b4566cc9f9d3294cd5e3dd7070' ); // Your auth code goes here for private repos
 			$updater->initialize();
 		}
 	}
