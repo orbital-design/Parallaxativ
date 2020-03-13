@@ -118,9 +118,8 @@ if ( ! class_exists( 'Parallaxativ' ) ) :
 			require_once PARALLAXATIV_PLUGIN_DIR . 'includes/class-parallaxativ-github-updater.php';
 
 			$updater = new Parallax_Github_Updater( __FILE__ );
-			$updater->set_username( 'addzycullen' );
+			$updater->set_username( 'orbital-design' );
 			$updater->set_repository( 'Parallaxativ' );
-			$updater->authorize( 'e46e129a44bd68b4566cc9f9d3294cd5e3dd7070' ); // Your auth code goes here for private repos
 			$updater->initialize();
 		}
 	}
